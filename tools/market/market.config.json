@@ -69,7 +69,7 @@
         "source": {
           "type": "git",
           "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
-          "commit": "a26b03df48c688affa7862617891133eb0fc825d"
+          "commit": "4f9659cecc2248e537bd272a8094fd7ba0ff42a5"
         },
         "engines": {
           "dsh": ">=0.2.1-rc.0"
