@@ -128,10 +128,14 @@ git("commit", "-m", "docs: refresh plugin market index");
 if (args["dry-run"] === true) {
 	console.log("\n--dry-run: not pushing.");
 } else {
-	const remotes = git("remote");
-	if (remotes === 0) git("remote", "add", "origin", remote);
-	else git("remote", "set-url", "origin", remote);
-	git("push", "-u", "origin", branch);
+	const hasOrigin = git("remote", "get-url", "origin") === 0;
+	if (hasOrigin) git("remote", "set-url", "origin", remote);
+	else git("remote", "add", "origin", remote);
+	const pushStatus = git("push", "-u", "origin", branch);
+	if (pushStatus !== 0) {
+		console.error(`\npush FAILED (git exit ${pushStatus}). Nothing reached ${remote}; fix the remote or the credentials and re-run this script.`);
+		process.exit(pushStatus);
+	}
 	console.log(`\npushed to ${remote} (${branch})`);
 }
 
