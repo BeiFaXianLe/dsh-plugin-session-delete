@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Delete",
+    "description": "Adds a Trash button to the session header that detaches the live session and removes its persisted directory."
+  }
+}

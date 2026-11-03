@@ -1,0 +1,80 @@
+{
+  "$comment": "Market index generator input. publish-git-source.mjs rewrites versions[].source to the git commit it just pushed.",
+  "index": {
+    "title": {
+      "en": "DSH Session Plugin Mirror",
+      "zh": "DSH 会话插件镜像"
+    },
+    "description": {
+      "en": "Self-hosted index of DSH plugins, served over HTTPS and added as a market source in the Plugins page.",
+      "zh": "自建的 DSH 插件索引，通过 HTTPS 提供，在插件页面作为市场源添加。"
+    },
+    "metadata": {
+      "categories": {
+        "utility": {
+          "title": {
+            "en": "Utility",
+            "zh": "实用工具"
+          }
+        }
+      },
+      "labels": {
+        "session": {
+          "title": {
+            "en": "Session",
+            "zh": "会话"
+          }
+        }
+      },
+      "sortKeys": {}
+    }
+  },
+  "plugin": {
+    "name": "dsh-plugin-session-delete",
+    "title": {
+      "en": "Session Delete",
+      "zh": "会话删除"
+    },
+    "description": {
+      "en": "Adds a Trash button to the conversation header: detaches the live session and removes its persisted directory.",
+      "zh": "在会话头部添加 Trash 按钮：将会话从内存中摘除并删除对应的磁盘目录。"
+    },
+    "author": "chuling-lingling",
+    "homepage": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
+    "repository": {
+      "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete"
+    },
+    "icon": {
+      "mode": "inline",
+      "file": "../../icon.svg"
+    },
+    "metadata": {
+      "category": "utility",
+      "keywords": [
+        "session",
+        "delete",
+        "trash",
+        "cleanup",
+        "会话",
+        "删除"
+      ],
+      "labels": [
+        "session"
+      ]
+    },
+    "versions": [
+      {
+        "version": "0.3.1",
+        "publishTimestamp": 0,
+        "source": {
+          "type": "git",
+          "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
+          "commit": "a26b03df48c688affa7862617891133eb0fc825d"
+        },
+        "engines": {
+          "dsh": ">=0.2.1-rc.0"
+        }
+      }
+    ]
+  }
+}

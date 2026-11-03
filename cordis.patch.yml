@@ -1,0 +1,8 @@
+# The session-delete bundle patch (0.2.1-rc.x port): inserts this plugin as one
+# profile row. The host half registers a loopback `/session-delete` route and a
+# serial deletion queue; the browser half (exports["./client"], declared via
+# dsh.client) registers the conversation-header Trash button that calls it.
+
+- insert:
+    - id: session-delete
+      name: dsh-plugin-session-delete
