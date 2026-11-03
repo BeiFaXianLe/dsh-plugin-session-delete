@@ -61,11 +61,11 @@
       "versions": [
         {
           "version": "0.3.1",
-          "publishTimestamp": 1793699358,
+          "publishTimestamp": 1793699388,
           "source": {
             "type": "git",
             "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete",
-            "commit": "d868f7ea5a12c26bed0df69ddc25f7d29d44bc07"
+            "commit": "d4b2a27e310479d62eb29d2440f60ed2219c33d0"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.0"
