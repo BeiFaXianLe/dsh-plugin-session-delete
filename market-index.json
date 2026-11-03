@@ -39,9 +39,9 @@
         "zh": "在会话头部添加 Trash 按钮：将会话从内存中摘除并删除对应的磁盘目录。"
       },
       "author": "chuling-lingling",
-      "homepage": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
+      "homepage": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete",
       "repository": {
-        "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete"
+        "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete"
       },
       "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlNlc3Npb24gZGVsZXRlIj4KICA8cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHJ4PSIxNCIgZmlsbD0iIzFmNmZlYiIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIzLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNMTggMjJoMjgiLz4KICAgIDxwYXRoIGQ9Ik0yNyAyMnYtNGEzIDMgMCAwIDEgMy0zaDRhMyAzIDAgMCAxIDMgM3Y0Ii8+CiAgICA8cGF0aCBkPSJNMjIgMjJsMiAyMmE0IDQgMCAwIDAgNCAzLjZoOGE0IDQgMCAwIDAgNC0zLjZsMi0yMiIvPgogICAgPHBhdGggZD0iTTI5IDMwdjExTTM1IDMwdjExIi8+CiAgPC9nPgo8L3N2Zz4K",
       "metadata": {
@@ -61,11 +61,11 @@
       "versions": [
         {
           "version": "0.3.1",
-          "publishTimestamp": 1793698798,
+          "publishTimestamp": 1793699358,
           "source": {
             "type": "git",
-            "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
-            "commit": "4f9659cecc2248e537bd272a8094fd7ba0ff42a5"
+            "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete",
+            "commit": "d868f7ea5a12c26bed0df69ddc25f7d29d44bc07"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.0"

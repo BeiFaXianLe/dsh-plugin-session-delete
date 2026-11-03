@@ -68,8 +68,8 @@
         "publishTimestamp": 0,
         "source": {
           "type": "git",
-          "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
-          "commit": "4f9659cecc2248e537bd272a8094fd7ba0ff42a5"
+          "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete",
+          "commit": "d868f7ea5a12c26bed0df69ddc25f7d29d44bc07"
         },
         "engines": {
           "dsh": ">=0.2.1-rc.0"
