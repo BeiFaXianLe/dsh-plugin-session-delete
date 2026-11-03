@@ -40,9 +40,9 @@
       "zh": "在会话头部添加 Trash 按钮：将会话从内存中摘除并删除对应的磁盘目录。"
     },
     "author": "chuling-lingling",
-    "homepage": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
+    "homepage": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete",
     "repository": {
-      "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete"
+      "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete"
     },
     "icon": {
       "mode": "inline",

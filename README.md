@@ -2,7 +2,7 @@
 
 > 给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 补上「真正删除会话」能力的插件。
 
-DSH 自带的只有归档：归档只是把会话藏起来，事件日志仍留在 `~/.dsh/sessions/`。本插件补上真正���删除——
+DSH 自带的只有归档：归档只是把会话藏起来，事件日志仍留在 `~/.dsh/sessions/`。本插件补上真正的删除——
 会话头部一个 **Trash** 按钮，删除后内存中的会话被摘除（触发 `session/disposed`，所有打开的页面实时移除），
 磁盘目录 `~/.dsh/sessions/<项目>/<会话ID>/` 一并清除，重启后不会复活。
 
@@ -22,7 +22,7 @@ DSH 自带的只有归档：归档只是把会话藏起来，事件日志仍留�
 1. 打开侧栏 **Plugins** → **More** → **Experimental plugins** → 打开 **Custom plugin markets**。
 2. 切到 **Discover** 标签 → 添加索引源（index source）：
    ```
-   https://raw.githubusercontent.com/<owner>/dsh-plugin-session-delete/main/market-index.json
+   https://raw.githubusercontent.com/BeiFaXianLe/dsh-plugin-session-delete/main/market-index.json
    ```
 3. 搜索 `session` → 找到 **Session Delete** → 安装。
 4. **完全退出并重新打开 DeepSeek Harness**（宿主端代码只在启动时装载）。
@@ -30,7 +30,7 @@ DSH 自带的只有归档：归档只是把会话藏起来，事件日志仍留�
 ## 安装（命令行）
 
 ```bash
-dsh plugin --profile desktop add "git+https://github.com/<owner>/dsh-plugin-session-delete.git#<commit>"
+dsh plugin --profile desktop add "git+https://github.com/BeiFaXianLe/dsh-plugin-session-delete.git#<commit>"
 ```
 
 ## 兼容性
@@ -48,13 +48,19 @@ dsh plugin --profile desktop remove dsh-plugin-session-delete
 
 ```bash
 # 改完源码后重新发布（提交插件快照 + 刷新索引 + 推送）
-node tools/market/publish-git-source.mjs --repo https://github.com/<owner>/dsh-plugin-session-delete
+node tools/market/publish-git-source.mjs --repo https://github.com/BeiFaXianLe/dsh-plugin-session-delete
 
 # 只重建并校验索引
-node tools/market/build-market-index.mjs "https://raw.githubusercontent.com/<owner>/dsh-plugin-session-delete/main/market-index.json"
+node tools/market/build-market-index.mjs "https://raw.githubusercontent.com/BeiFaXianLe/dsh-plugin-session-delete/main/market-index.json"
 ```
 
 索引由 DSH 官方校验器 `@deepseek-ai/dsh-plugin-market-index` 校验（`tools/market/vendor/`），本地通过即宿主端可读。
+
+## 致谢与许可
+
+本插件移植自 [chuling-lingling/dsh-plugin-session-delete](https://github.com/chuling-lingling/dsh-plugin-session-delete)（MIT，原作者 chuling-lingling），
+原版面向 dsh 0.1.x（以 `settings` 命名空间作为删除队列）；本移植版改用 0.2.x 的 `ctx.webServer` 路由 + 宿主端删除队列，
+并补上了 fork 子会话门禁、冷会话广播 `api-session/removed`、删除前终止 Agent 等修复。
 
 ## License
 

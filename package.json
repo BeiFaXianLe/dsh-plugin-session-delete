@@ -1,7 +1,7 @@
 {
   "name": "dsh-plugin-session-delete",
   "version": "0.3.1",
-  "description": "Delete the current session from the conversation header — detaches the live session and removes its persisted directory (working port for dsh 0.2.1-rc.x)",
+  "description": "Delete the current session from the conversation header — detaches the live session and removes its persisted directory (port for dsh 0.2.1-rc.x)",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -10,11 +10,17 @@
     "session"
   ],
   "author": "chuling-lingling",
+  "contributors": [
+    {
+      "name": "BeiFaXianLe",
+      "url": "https://github.com/BeiFaXianLe"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chuling-lingling/dsh-plugin-session-delete.git"
+    "url": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete.git"
   },
-  "homepage": "https://github.com/chuling-lingling/dsh-plugin-session-delete#readme",
+  "homepage": "https://github.com/BeiFaXianLe/dsh-plugin-session-delete#readme",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
