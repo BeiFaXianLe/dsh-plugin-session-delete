@@ -1,3 +1,6 @@
-node_modules/
+# Only the repository's own install directory is ignored; the vendored
+# validator under tools/market/vendor/node_modules must stay tracked so a
+# fresh clone can rebuild and validate the market index.
+/node_modules/
 *.tgz
 .DS_Store
