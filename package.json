@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-session-delete",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Delete the current session from the conversation header — detaches the live session and removes its persisted directory (port for dsh 0.2.1-rc.x)",
   "keywords": [
     "dsh",
